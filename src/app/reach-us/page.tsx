@@ -5,11 +5,11 @@ import { services } from "@/config/services";
 import { EnquiryForm } from "@/components/form/EnquiryForm";
 import { Reveal } from "@/components/ui/Reveal";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Reach Us",
-  description: `Send an enquiry to ${siteConfig.name}.`,
+  description: "Send an enquiry to Dev Travels Chennai by form, phone or WhatsApp.",
+  alternates: { canonical: "/reach-us" },
 };
-
 export default async function ReachUsPage({
   searchParams,
 }: {

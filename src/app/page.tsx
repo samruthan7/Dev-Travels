@@ -4,9 +4,10 @@ import { services } from "@/config/services";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Services",
-  description: "Tour and travel services from Chennai: Tirupati, South India, temple tours and custom trips.",
+  description: "Travel services from Chennai, including Tirupati and Mumbai to Tirupati routes.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {

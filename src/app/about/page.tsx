@@ -3,9 +3,10 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "About",
-  description: `About ${siteConfig.name}.`,
+  description: "About Dev Travels Chennai and how we plan your trips.",
+  alternates: { canonical: "/about" },
 };
 
 function Placeholder({ children }: { children: string }) {

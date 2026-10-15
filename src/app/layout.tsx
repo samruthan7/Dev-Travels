@@ -35,5 +35,20 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b1020", // change to match your background colour
+  themeColor: "#0b1020",
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <JsonLd />
+        {children}
+      </body>
+    </html>
+  );
+}
